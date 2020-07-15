@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="Quality-Home.css" type="text/css">
+    <script src="Quality-Home.js" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    </head>  
+
+<!-- left side Main side bar  -->
+<section id="mySidebar" class= "sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <img src= "https://www.microprecision.com/img/MPClogo.png" class="logomini" style="vertical-align:middle;width=50;height=50"; viewBox="0 0 50 50"> × </a>
+        
+    <div class= "sidebar-menu"></div>
+      <h3 class= "sidebar-menu"> <a href="#">Dashboard </a></h3>
+      <h3 class= "sidebar-menu"> <a href="#"> Manager's Dashboard </a></h3>
+      <h3 class= "sidebar-menu"> <a href="#">Sales CRM </a></h3>
+      <h3 class= "sidebar-menu"> <a href="#"> CMS </a></h3>
+      <h3 class= "sidebar-menu"> <a href="#"> Division Folder </a></h3>
+      <h3 class= "sidebar-menu"> <a href="Quality.html"> Quality </a></h3>
+      <h3 class= "sidebar-menu"> <a href="#"> Customer Service </a></h3>
+      <h3 class= "sidebar-menu"> <a href="#"> Ticket System </a></h3>
+</section>
+        
+<!-- Main section  -->
+  <section id= "main">
+        
+<!-- Profile  -->
+        
+<div class="topnav">
+  <span id="main">
+        <button class="openbtn" onclick="openNav()">☰</button></span>
+  
+  <span>
+    <a href="#Notifications" target="_blank"><svg style="vertical-align:middle;width:24px;height:24px" viewBox="0 0 24 24"> <path fill= "white" d="M11.5,22C11.64,22 11.77,22 11.9,21.96C12.55,21.82 13.09,21.38 13.34,20.78C13.44,20.54 13.5,20.27 13.5,20H9.5A2,2 0 0,0 11.5,22M18,10.5C18,7.43 15.86,4.86 13,4.18V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V4.18C7.13,4.86 5,7.43 5,10.5V16L3,18V19H20V18L18,16M19.97,10H21.97C21.82,6.79 20.24,3.97 17.85,2.15L16.42,3.58C18.46,5 19.82,7.35 19.97,10M6.58,3.58L5.15,2.15C2.76,3.97 1.18,6.79 1,10H3C3.18,7.35 4.54,5 6.58,3.58Z"/></svg>
+    </a><a href="#Messages" target="_blank"><svg style="vertical-align:middle;width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M3,15H1V3A2,2 0 0,1 3,1H19V3H3V15M12,23A1,1 0 0,1 11,22V19H7A2,2 0 0,1 5,17V7A2,2 0 0,1 7,5H21A2,2 0 0,1 23,7V17A2,2 0 0,1 21,19H16.9L13.2,22.71C13,22.89 12.76,23 12.5,23H12M9,9V11H19V9H9M9,13V15H17V13H9Z"/></svg></a> 
+  </span>
+  
+<span class="datetime" id="datetime" style="color:white;font-size:16px;"></span>
+<script>
+var d = new Date();
+document.getElementById("datetime").innerHTML = d.toDateString();
+</script>
+    
+    <span class="topnavdropdown">
+      <button class="topnavdropbtn">
+       <a href="profile.html"> Welcome, Jane Smith 
+     <svg width="24" height="24" viewBox="0 0 24 16"> <path fill= "white" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /> </svg>
+        </a><i class="fa fa-caret-down"></i></button>
+      <div class="topnavdropdown-content">
+        <a href="profile.html">My Profile</a>
+        <a href="#"> Sign Out</a>
+      </div>
+    </span>
+</div>
+   
+  
+   <div class="title">
+   <img style="vertical-align:middle; width:45px;height:65px" src= "https://newcrm.microprecision.com/uploadfile/Seal%2050%20years-02.png"/  viewBox="0 0 24 24">
+ Quality 
+   </div>
+      
+      
+      
+      
+      
+      
+      
+<!-- Full page tab selection  -->       
+<button class="tablink" onclick="openPage('Home', this, '#3b7fb2')">Home</button>
+<button class="tablink" onclick="openPage('News', this, '#468383')" id="defaultOpen">Documents</button>
+<button class="tablink" onclick="openPage('Contact', this, '#468368')">Customer Quality</button>
+<button class="tablink" onclick="openPage('About', this, '835346')">Risk Management</button>
+
+ <!--Home Tab--->      
+<div id="Home" class="tabcontent" style="display:block">
+  <div class="grid">
+   <div class="col-8 Calendar">
+       <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%233b7fb2&amp;ctz=America%2FLos_Angeles&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=bWljcm9wcmVjaXNpb24uY29tXzdncmZvdDV0b2FiNzZxMWIwcmRpNTZkNDA0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bWljcm9wcmVjaXNpb24uY29tX2cxM2dsNmc3ZDhtazN2M2JrZmtpbzFxOXNvQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bWljcm9wcmVjaXNpb24uY29tXzFnamk0dTRkcnRqYmVvc2ZubG1mcGNsdmFjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23F6BF26&amp;color=%23A79B8E&amp;color=%230B8043&amp;color=%23D81B60" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+   <div class="col-4 Quality-Statement">
+      <h4 class="Quality-Policy"> Quality Policy </h4>
+          <p Class="corevalues">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem in minus, nihil inventore hic suscipit, animi et eaque ab eligendi libero ea excepturi expedita impedit laudantium sunt magni aliquid praesentium.</p>
+          <p Class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, facilis nulla fuga cum velit, hic enim minima maxime unde, deserunt inventore obcaecati animi? Similique eaque dolor dolorem? Nulla, labore perspiciatis.</p>
+      <h4 class="Quality-Policy"> Quality Vision </h4>
+          <p Class="corevalues"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit at excepturi, odio nihil corrupti. </p>
+      <h4 class="Quality-Policy"> Quality Mission</h4>
+          <p Class="corevalues"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat obcaecati culpa veritatis necessitatibus modi assumenda minus quos voluptatem magni ut, quae similique? Inventore, dolores! Eum quos laborum cumque impedit.</p>
+      <h4 class="Quality-Policy">Core Values</h4>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magnam maxime ullam earum ipsam ipsum.</p>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magnam maxime ullam earum ipsam ipsum.</p>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magnam maxime ullam earum ipsam ipsum.</p>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magnam maxime ullam earum ipsam ipsum.</p>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magnam maxime ullam earum ipsam ipsum.</p>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magnam maxime ullam earum ipsam ipsum.</p>
+          <h5 Class="corevalues"> Miscellaneous </h5>
+            <p class="corevalues">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magnam maxime ullam earum ipsam ipsum.</p>
+   </div>
+  </div>
+</div>
+
+      
+      
+      <!----------------------------->
+<!--Documents Tab in Quality Home-->
+<!----------------------------->
+
+      
+      
+<div id="News" class="tabcontent">
+    <link rel="stylesheet" href="collapse-documents.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <h3>Corporate Documents</h3>
+  
+    <!---Documents of External Origin--->
+    
+  <div class="container">
+  
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Documents of External Origin</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body" link="#0563C1" vlink="#954F72">
+            
+
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+
+        <div style="overflow:auto;">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+         collapse;table-layout:fixed;min-width: 900px;" width="100%">
+          <tr>
+            <td width="40%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+          </tr>
+         <col class=xl65 span=7 style='mso-width-source:userset'>
+         <tr height=21 style='height:16.0pt'>
+          <td colspan=7 height=21 class=xl66>Documents of External Origin</td>
+         </tr>
+         <tr height=21 style='height:16.0pt'>
+          <td class=xl67>DESCRIPTION</td>
+          <td class=xl67>REVISION</td>
+          <td class=xl67>SOURCE</td>
+          <td class=xl67>TYPE</td>
+          <td class=xl67>APPROVAL BY</td>
+          <td class=xl67>LOCATION</td>
+          <td class=xl67>ACCESS</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:none;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document A</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:none;border-bottom:
+          .5pt solid white;border-left:.5pt solid white;background:#DBDBDB;mso-pattern:
+          #DBDBDB none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document B</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document C</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document D</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document E</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document F</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+         <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+            <a href="#"target="_blank"><svg     xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" 
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document G</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document H</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document I</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document J</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document K</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document L</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document M</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Corp QA</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document N</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ISO/IEC</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Team Site</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document O</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ISO/IEC</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Team Site</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>ALL</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document P</td>
+          <td class=xl70 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>November 17, 2017</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ISO/IEC</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Team Site</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document Q</td>
+          <td class=xl70 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>May 18, 2020</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ISO/IEC</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Team Site</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>ALL</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document R</td>
+          <td class=xl70 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>May 19, 2020</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ISO/IEC</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Team Site</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+          <td height=24 class="xfirstcolumn" style='height:18.0pt;font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:none;border-left:none;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Document S</td>
+          <td class=xl70 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:none;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>May 20, 2020</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:none;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>ISO/IEC</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:none;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:none;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:none;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>Team Site</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:none;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ALL</td>
+         </tr>
+         <![if supportMisalignedColumns]>
+         <tr height=0 style='display:none'>
+          <td width=359 style='width:269pt'></td>
+          <td width=151 style='width:113pt'></td>
+          <td width=151 style='width:113pt'></td>
+          <td width=151 style='width:113pt'></td>
+          <td width=151 style='width:113pt'></td>
+          <td width=151 style='width:113pt'></td>
+          <td width=151 style='width:113pt'></td>
+         </tr>
+         <![endif]>
+        </table>
+
+        </div>
+
+
+          </div>
+        <div class="panel-footer" style="color:black;">Documents of External Origin</div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!----------------------------->
+    <!---Documents of Internal Origin--->
+   <!-----------------------------> 
+  <div class="container">
+  
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse2">Documents of Internal Origin</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+
+<!----------------------------->
+<!--Start of Documents table form: Document of internal Orgin -->
+
+        <div style="overflow:auto;">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+         collapse;table-layout:fixed;min-width: 900px;" width="100%">
+          <tr>
+            <td width="40%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+          </tr>
+         <tr>
+          <td colspan=7 class=xl66>Documents of Internal Origin</td>
+         </tr>
+         <tr>
+             <td class=xl67>DESCRIPTION</td>
+                <td class=xl67>REVISION</td>
+                <td class=xl67>SOURCE</td>
+                <td class=xl67>TYPE</td>
+                <td class=xl67>APPROVAL BY</td>
+                <td class=xl67>LOCATION</td>
+                <td class=xl67>ACCESS</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='background:#DBDBDB'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  MP Calibration Procedures</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400; text-decoration:underline; text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>CMS</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Corp/Lab Manager</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>CMS</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:none;border-bottom:
+          .5pt solid white;border-left:.5pt solid white;background:#DBDBDB;mso-pattern:
+          #DBDBDB none'>All</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  MP Calibration System Description</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>REV. 02 03-05-20</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  MP Quality Manual</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>REV. 02 03-05-20</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Approved Traceability Vendor List</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>REV.02 (6-15-19)</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Pdf.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>All</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Division Authorized Signatory List</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+        
+        </table>
+
+        </div>
+ 
+          </div>
+        <div class="panel-footer" style="color:black;">Documents of Internal Origin</div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+     <!---Corporate QA documents--->
+    
+  <div class="container">
+  
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse3">Corporate QA Forms</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+
+<!----------------------------->
+<!--Start of Documents table form: Corporat QA Forms -->
+<!----------------------------->
+
+        <div style="overflow:auto;">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+         collapse;table-layout:fixed;min-width: 900px;" width="100%">
+          <tr>
+            <td width="40%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+          </tr>
+         <tr>
+          <td colspan=7 class=xl66>Corporate QA Forms</td>
+         </tr>
+         <tr>
+             <td class=xl67>DESCRIPTION</td>
+                <td class=xl67>REVISION</td>
+                <td class=xl67>SOURCE</td>
+                <td class=xl67>TYPE</td>
+                <td class=xl67>APPROVAL BY</td>
+                <td class=xl67>LOCATION</td>
+                <td class=xl67>ACCESS</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='background:#DBDBDB'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  MP Work Instruction Template</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400; text-decoration:underline; text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>CMS</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Corp/Lab Manager</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>CMS</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:none;border-bottom:
+          .5pt solid white;border-left:.5pt solid white;background:#DBDBDB;mso-pattern:
+          #DBDBDB none'>All</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  MP Vendor Survey Questionnair Form</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>REV. 02 03-05-20</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  MP 8D Report Form</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>REV. 02 03-05-20</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  MP Damage Report Form</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>REV.02 (6-15-19)</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Pdf.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>All</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Lab Audit Report Form</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+        
+        </table>
+
+        </div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+            
+          
+          
+          
+          </div>
+        <div class="panel-footer" style="color:black;">Corporate QA Forms</div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+ 
+    
+    
+    
+<!----------------------------->
+<!--Division Documents-->
+<!----------------------------->
+  <h3>Division Documents</h3>
+   <!---Division Documents--->
+    
+  <div class="container">
+  
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse4">Division Work Instructions</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+
+<!----------------------------->
+<!--Start of Documents table form: Division Work Instructions -->
+<!----------------------------->
+
+        <div style="overflow:auto;">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+         collapse;table-layout:fixed;min-width: 900px;" width="100%">
+          <tr>
+            <td width="40%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+          </tr>
+         <tr>
+          <td colspan=7 class=xl66>Division Work Instructions</td>
+         </tr>
+         <tr>
+             <td class=xl67>DESCRIPTION</td>
+                <td class=xl67>REVISION</td>
+                <td class=xl67>SOURCE</td>
+                <td class=xl67>TYPE</td>
+                <td class=xl67>APPROVAL BY</td>
+                <td class=xl67>LOCATION</td>
+                <td class=xl67>ACCESS</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='background:#DBDBDB'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Work Instruction: How to Quote in CMS</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400; text-decoration:underline; text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>CMS</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Corp/Lab Manager</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:.5pt solid white;
+          border-bottom:.5pt solid white;border-left:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>CMS</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:none;border-right:none;border-bottom:
+          .5pt solid white;border-left:.5pt solid white;background:#DBDBDB;mso-pattern:
+          #DBDBDB none'>All</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Work Instruction: How to Quote in CRM</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>REV. 02 03-05-20</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Work Instruction: How to Invoice</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>REV. 02 03-05-20</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>MP-Internal</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Pdf</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>ALL</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Work Instruction: Customer Complaints</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>REV.02 (6-15-19)</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Pdf.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#DBDBDB;
+          mso-pattern:#DBDBDB none'>Teamsite</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #DBDBDB;mso-pattern:#DBDBDB none'>All</td>
+         </tr>
+         <tr>
+          <td class=xfirstcolumn style='font-size:11.0pt;color:black;
+          font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+          none;font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          .5pt solid white;border-bottom:.5pt solid white;border-left:none;background:
+          #EDEDED;mso-pattern:#EDEDED none'>
+              <a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a>  Work Instruction: Report a Nonconformance</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>See Web</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>ABCD</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Published Doc.</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>Quality Director</td>
+          <td class=xl69 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:underline;text-underline-style:single;text-line-through:none;
+          font-family:Calibri, sans-serif;border:.5pt solid white;background:#EDEDED;
+          mso-pattern:#EDEDED none'>sample.org</td>
+          <td class=xl68 style='font-size:11.0pt;color:black;font-weight:400;
+          text-decoration:none;text-underline-style:none;text-line-through:none;
+          font-family:Calibri, sans-serif;border-top:.5pt solid white;border-right:
+          none;border-bottom:.5pt solid white;border-left:.5pt solid white;background:
+          #EDEDED;mso-pattern:#EDEDED none'>Corp QA</td>
+         </tr>
+        
+        </table>
+
+        </div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+            
+          
+          
+          
+          </div>
+        <div class="panel-footer" style="color:black;">Division Work Instructions</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer>
+<!-- Tab section  -->
+<div class="tab-background"> 
+    <button class="tab-section" onclick="window.print()">Print this page</button>
+</div>  
+    </footer> 
+</div>
+
+<!----Tab Customer Quality--------------------------------------------------------------------------------------------------->   
+      
+      
+<div id="Contact" class="tabcontent">
+    <table width="100%"> 
+    <tr  align="right">
+            <td style="background-color:#468368;">
+                <input type="hidden">
+                <span style="padding-left: 10px;height:25px;">Keyword: <input id="keyword" size="15" onkeydown="if (event.keyCode == 13) {doKeySearch();}"></span>
+                &nbsp;&nbsp;<span style="padding-left: 15px;">(Search by Date)</span>&nbsp;&nbsp;
+                <span>From:</span>
+                <input value="06/26/2010" style="width: 100px; display: none;"><a href="javascript:void(0)" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 30px; height: 15px;"></a><input type="text" class="textbox-text validatebox-text" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 18px; padding-top: 3px; padding-bottom: 3px; width: 100px; height: 25px;"><input type="hidden" class="textbox-value" name="" value="06/26/2010">
+                <span>To:</span>
+                <input value="06/26/2021" style="width: 100px; display: none;"><a href="javascript:void(0)" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 30px; height: 15px;"></a><input type="text" class="textbox-text validatebox-text" autocomplete="off" placeholder="" style="margin-left: 0px; margin-right: 18px; padding-top: 3px; padding-bottom: 3px; width: 100px; height: 25px;"><input type="hidden" class="textbox-value" name="" value="06/26/2021">
+                <button Class="searchbtn">Search</button>
+          </td>
+          </tr>
+      </table>      
+  <h3>Customer Surveys</h3>
+    <div style="overflow-x: auto">
+   <table class="surveytable" border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+         collapse;table-layout:fixed;min-width: 900px;" width="100%">
+          <tr>
+            <td width="5%" min-width="10px"></td>
+            <td width="14%" min-width="10px"></td>
+            <td width="12%"></td>
+            <td width="10%"></td>
+            <td width="12%"></td>
+            <td width="12%"></td>
+            <td width="10%"></td>
+            <td width="5%"></td>
+            <td width="5%" min-width="5px"></td>
+          </tr>
+        <tr>
+          <td colspan=8></td>
+         </tr>
+         <tr class="surveytable" style="background-color:darkslategray;">
+             <th colspan="2" class="surveytable">Survey#</th>
+                <th class="surveytable">Date</th>
+                <th class="surveytable">Division</th>
+                <th class="surveytable">Customer</th>
+                <th class="surveytable">Contact</th>
+                <th class="surveytable">Work Order No</th>
+                <th class="surveytable">Rating</th>
+                <th class="surveytable">View</th>
+         </tr>
+       <tr class="surveytable" style="background-color: lightgrey">
+           <td class="surveytable" rowspan="2">GV-026 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank">Compl#SURV-GV-026</a></td> 
+           <td class="surveytable" rowspan="2">2020-May-25</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001234</td>
+           <td class="surveytable" rowspan="2" style="color: darkred">40%</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: lightgrey;font-size:11px;"><a href="#"target="_blank">CAR#Compl-SURV-GV-026</a></td></tr>
+       
+       <tr class="surveytable" style="background-color: darkgrey">
+           <td class="surveytable" rowspan="2">GV-025 </td>  <td class="surveytable" style="font-size: 15px;"><a href="#"target="_blank"></a></td> 
+           <td class="surveytable" rowspan="2">2020-January-25</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7000012</td>
+           <td class="surveytable" rowspan="2">95%</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color:darkgrey;font-size: 11px;"><a href="#"target="_blank"></a></td></tr>
+       
+       <tr class="surveytable" style="background-color: lightgrey">
+           <td class="surveytable" rowspan="2">GV-027 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank">Compl#SURV-GV-027</a></td> 
+           <td class="surveytable" rowspan="2">2020-May-27</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001235</td>
+           <td class="surveytable" rowspan="2" style="color: darkred">65%</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: lightgrey;font-size: 11px;"><a href="#"target="_blank"></a></td></tr>
+       
+       <tr class="surveytable" style="background-color: darkgrey">
+           <td class="surveytable" rowspan="2">GV-028 </td>  <td class="surveytable" style="text-decoration-line: underline;font-size:11px;">Convert to Complaint</td> 
+           <td class="surveytable" rowspan="2">2020-June-10</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001240</td>
+           <td class="surveytable" rowspan="2" style="color: darkred">65%</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: darkgrey;font-size: 11px;"><a href="#"target="_blank"></a></td></tr>
+    </table>
+    </div>
+    
+    
+  <h3>Customer Complaints</h3>
+  <div style="overflow-x: auto">
+   <table class="surveytable" border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+         collapse;table-layout:fixed;min-width: 900px;" width="100%">
+          <tr>
+            <td width="8%" min-width="10px"></td>
+            <td width="12%" min-width="10px"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>  
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+              <td width="8%"></td>
+              <td width="8%"></td>
+            <td width="6%"></td>
+          </tr>
+        <tr>
+          <td colspan=11></td>
+         </tr>
+         <tr class="surveytable" style="background-color:darkslategray;">
+             <th colspan="2" class="surveytable">Complaint#</th>
+                <th class="surveytable">Date Created</th>
+                <th class="surveytable">Status</th>
+                <th class="surveytable">Type</th>
+                <th class="surveytable">Department</th>
+                <th class="surveytable">Division</th>
+                <th class="surveytable">Customer</th>
+                <th class="surveytable">Contact</th>
+                <th class="surveytable">Work Order#</th>
+                <th class="surveytable">Encoded By</th>
+                <th class="surveytable">View/Edit</th>
+         </tr>
+       <tr class="surveytable" style="background-color: lightgrey">
+           <td class="surveytable" rowspan="2">SURV-GV-026 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank">SURV#GV-026</a></td> 
+           <td class="surveytable" rowspan="2">2020-May-25</td>
+           <td class="surveytable" rowspan="2">Closed: 2020-May-25</td>
+           <td class="surveytable" rowspan="2">Shipping Error</td>
+           <td class="surveytable" rowspan="2">Shipping</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001234</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: lightgrey;font-size:11px;"><a href="#"target="_blank">CAR#Compl-SURV-GV-026</a></td></tr>
+       
+       <tr class="surveytable" style="background-color: darkgrey">
+          <td class="surveytable" rowspan="2">SURV-GV-027 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank">#SURV#GV-027</a></td> 
+           <td class="surveytable" rowspan="2">2020-May-27</td>
+           <td class="surveytable" rowspan="2">Closed: 2020-May-31</td>
+           <td class="surveytable" rowspan="2">Field Service</td>
+           <td class="surveytable" rowspan="2">Laboratory</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001235</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color:darkgrey;font-size: 11px;"><a href="#"target="_blank"></a></td></tr>
+       
+       <tr class="surveytable" style="background-color: lightgrey">
+           <td class="surveytable" rowspan="2">GV-05 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank"></a></td> 
+           <td class="surveytable" rowspan="2">2020-May-27</td>
+           <td class="surveytable" rowspan="2">Closed: 2020-June-03</td>
+           <td class="surveytable" rowspan="2">Standard</td>
+           <td class="surveytable" rowspan="2">Laboratory</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001235</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: lightgrey;font-size: 11px;"><a href="#"target="_blank">CAR#Compl-GV-05</a></td></tr>
+       
+       <tr class="surveytable" style="background-color: yellow">
+           <td class="surveytable" rowspan="2">GV-06 </td>  <td class="surveytable" style="text-decoration-line: underline;font-size:15px;"></td> 
+           <td class="surveytable" rowspan="2">2020-June-10</td>
+           <td class="surveytable" rowspan="2" style="color:darkred">Pending</td>
+           <td class="surveytable" rowspan="2">Quote</td>
+           <td class="surveytable" rowspan="2">Customer Service</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001240</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: yellow;font-size: 11px;"><a href="#"target="_blank"></a></td></tr>
+    </table>
+    </div>
+    <h3>Corrective Action Reports</h3>
+  <div style="overflow-x: auto">
+   <table class="surveytable" border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+         collapse;table-layout:fixed;min-width: 900px;" width="100%">
+          <tr>
+            <td width="8%" min-width="10px"></td>
+            <td width="12%" min-width="10px"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>  
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+            <td width="10%"></td>
+              <td width="8%"></td>
+              <td width="8%"></td>
+            <td width="6%"></td>
+          </tr>
+        <tr>
+          <td colspan=11></td>
+         </tr>
+         <tr class="surveytable" style="background-color:darkslategray;">
+             <th colspan="2" class="surveytable">CAR#</th>
+                <th class="surveytable">Date Created</th>
+                <th class="surveytable">Status</th>
+                <th class="surveytable">Type</th>
+                <th class="surveytable">Department</th>
+                <th class="surveytable">Division</th>
+                <th class="surveytable">Customer</th>
+                <th class="surveytable">Contact</th>
+                <th class="surveytable">Work Order#</th>
+                <th class="surveytable">Encoded By</th>
+                <th class="surveytable">View/Edit</th>
+         </tr>
+       <tr class="surveytable" style="background-color: lightgrey">
+           <td class="surveytable" rowspan="2">Compl-SURV-GV-026 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank">SURV#GV-026</a></td> 
+           <td class="surveytable" rowspan="2">2020-May-25</td>
+           <td class="surveytable" rowspan="2">Closed:2020-May-25</td>
+           <td class="surveytable" rowspan="2">Shipping Error</td>
+           <td class="surveytable" rowspan="2">Shipping</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001234</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: lightgrey;font-size:11px;"><a href="#"target="_blank">Compl#SURV-GV-026</a></td></tr>
+       
+       <tr class="surveytable" style="background-color: darkgrey">
+          <td class="surveytable" rowspan="2">GV-03 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank"></a></td> 
+           <td class="surveytable" rowspan="2">2020-May-27</td>
+           <td class="surveytable" rowspan="2">Closed: 2020-May-31</td>
+           <td class="surveytable" rowspan="2">Field Service</td>
+           <td class="surveytable" rowspan="2">Laboratory</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7007777</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color:darkgrey;font-size: 11px;"><a href="#"target="_blank"></a></td></tr>
+       
+       <tr class="surveytable" style="background-color: yellow">
+           <td class="surveytable" rowspan="2">Compl-SURV-GV-05 </td>  <td class="surveytable" style="font-size: 11px;"><a href="#"target="_blank"></a></td> 
+           <td class="surveytable" rowspan="2">2020-May-27</td>
+           <td class="surveytable" rowspan="2">Awaiting Customer Response</td>
+           <td class="surveytable" rowspan="2">Standard</td>
+           <td class="surveytable" rowspan="2">Laboratory</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001235</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: yellow;font-size: 11px;"><a href="#"target="_blank">Compl#GV-05</a></td></tr>
+       
+       <tr class="surveytable" style="background-color: lightpink">
+           <td class="surveytable" rowspan="2">GV-04 </td>  <td class="surveytable" style="text-decoration-line: underline;font-size:15px;"></td> 
+           <td class="surveytable" rowspan="2">2020-February-10</td>
+           <td class="surveytable" rowspan="2" style="color:darkred">Pending</td>
+           <td class="surveytable" rowspan="2">Quote</td>
+           <td class="surveytable" rowspan="2">Customer Service</td>
+           <td class="surveytable" rowspan="2">Grass Valley</td>
+           <td class="surveytable" rowspan="2">ABC Customer</td>
+           <td class="surveytable" rowspan="2">Al Bundy</td>
+           <td class="surveytable" rowspan="2">GV-7001240</td>
+           <td class="surveytable" rowspan="2">Jane Smith</td>
+           <td class="surveytable" rowspan="2"><a href="#"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="18" height="18"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;vertical-align: middle;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b7fb2"><path d="M17.2,17.2c-5.68406,0 -10.32,4.63594 -10.32,10.32v116.96c0,5.68406 4.63594,10.32 10.32,10.32h137.6c5.68406,0 10.32,-4.63594 10.32,-10.32v-116.96c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM86,61.92c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-13.34344,0 -24.08,-10.73656 -24.08,-24.08c0,-13.34344 10.73656,-24.08 24.08,-24.08zM64.715,63.5325c-5.96625,5.64375 -9.675,13.63906 -9.675,22.4675c0,8.82844 3.70875,16.82375 9.675,22.4675c-17.5225,-7.94156 -30.315,-22.4675 -30.315,-22.4675c0,0 12.7925,-14.52594 30.315,-22.4675zM107.285,63.5325c17.5225,7.94156 30.315,22.4675 30.315,22.4675c0,0 -12.7925,14.52594 -30.315,22.4675c5.96625,-5.64375 9.675,-13.63906 9.675,-22.4675c0,-8.82844 -3.70875,-16.82375 -9.675,-22.4675zM86,72.24c-7.59219,0 -13.76,6.16781 -13.76,13.76c0,7.59219 6.16781,13.76 13.76,13.76c7.59219,0 13.76,-6.16781 13.76,-13.76c0,-7.59219 -6.16781,-13.76 -13.76,-13.76z"></path></g></g></svg></a>
+              <a href="#"target="_blank" title="System Generated PDF"><img src="https://www.microprecision.com/images/pdfpe.png" border="0" width="15" height="18" align="absmiddle"></a></td>
+       </tr>
+       <tr><td class="surveytable" style="background-color: lightpink;font-size: 11px;"><a href="#"target="_blank"></a></td></tr>
+    </table>
+    </div>
+     <h3>Customer Audit Report Results</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+     

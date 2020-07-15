@@ -1,0 +1,577 @@
+* {
+  padding:0;
+  margin:0;
+  
+}
+
+/* ---- Side bar menu  ---- */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  background-color: #111;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.logo-lg {
+  width:90%;
+  height: auto;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 20px;
+  margin-left: auto;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+}
+/* ---- TopNav  ---- */
+{Backgound-color: #424242;}
+.topnav {
+  overflow: hidden;
+  background-color: #424242;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+
+.topnavdropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.topnavdropdown .topnavdropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 16px;
+  background-color: #424242;
+  font-family: inherit;
+  margin: 0;
+}
+.topnav a:hover, .topnavdropdown:hover .topnavdropbtn {
+  background-color: #3b7fb2;
+  color: white;
+}
+.topnavdropdown-content {
+  display: none;
+  background-color: #3b7fb2;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.topnavdropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnavdropdown-content a:hover {
+  background-color: #424242;
+}
+
+.topnavdropdown:hover .topnavdropdown-content {
+  display: block;
+}
+.title {
+  font-size: 2.5rem;
+  Background-color: white;
+  font-family: Montserrat, sans-serif;
+  text-weight: bold;
+  magin: 3rem;
+}
+  
+}
+.myprofile {
+  font-size: 100px;
+  font-family: Montserrat, sans-serif;
+  text-weight: bold;
+  padding: 10px;
+}
+
+
+/*----My Information---*/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  min-height: 300px;
+  
+}
+
+
+/*--Profile Information--*/
+
+*{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+         
+
+.columnleft {
+  float: left;
+  width: 30%;
+  height: 230px;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-family: arial;
+  display: inline-block;
+  min-width: 200px;
+  max-width: 450px;
+}
+  input.hidden {
+    position: absolute;
+    left: -9999px;
+}
+.img-responsive{
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 100%;
+  max-width: 200px;
+  min-width: 100px;
+}   
+
+#profile-image1 {
+  cursor: pointer;
+  width: 40%;
+  height: auto;
+  border:2px solid #3b7fb2;
+  z-index: 1;
+}	
+#profile-image1:hover{
+  opacity:0.6;
+}
+
+.userpic {
+  position: absolute;
+  top: 30%;
+  width: 15%;
+  height: auto;
+  left: 15%;
+  z-index:-1;
+  max-width: 200px;
+  min-width: 30px;
+}
+.employeename {
+  position: absolute;
+  text-align: center;
+  left: 45%;
+  top: 5%;
+  max-width: 40%px;
+  display: inline-box;
+  object-fit: scale-down;  
+}
+.employeenameheader {
+  color: #3b7fb2;
+  font-size: 30px;
+  text-outline: 1px black;
+  font-weight: 600;
+}
+.employeenametitle {
+  color: grey;
+  font-size: 18px;
+}
+.employeenamedivision {
+    font-weight: 500;
+    font-size: 16px;
+}
+/* On smaller screens, where height is less than 450px, style of employeename (less padding and a smaller font size) */
+@media screen and (max-height: 450px){
+  .employeename {padding-top: 5px;}
+    .employeenameheader {font-size: 20px;}
+    .employeenametitle {font-size: 12px;}
+    .employeenameemail {font-size: 10px;}
+}
+@media screen and (max-width: 650px){
+  .employeename {padding: 5px;}
+    .employeenameheader {font-size: 20px;}
+    .employeenametitle {font-size: 12px;}
+    .employeenameemail {font-size: 10px;}
+}
+
+/*---employee status-------------------------*/
+/*the container must be positioned relative:*/
+
+
+.employeestatus-select {  
+  position: relative;
+  display:inline-block;
+  top: 85.5%;
+  width: 100%;
+  margin: 0;
+  text-align:center;
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Adding transition effect */
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+/* For IE <= 11 */
+.employeestatus-select::-ms-expand {
+  display: none; 
+}
+
+.employeestatus-select:hover,
+.employeestatus-select:focus {
+  color: #3b7fb2;
+  background-color: whitesmoke;
+  border-bottom-color: #DCDCDC;
+}
+
+/* CSS Status Icon */
+
+ 
+/*--Contact Information--*/
+.columnright {
+  float:right;
+  height: 230px;    
+  width: 70%;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: -15px;
+  font-family: arial;
+  display: inline-block;
+}
+.contactinfoheader{
+  color: #3b7fb2;
+  font-size: 30px;
+  text-outline: 1px black;
+  font-weight: 600;
+  padding-top: 4%;
+  padding-left: 10px;
+}
+
+table, th, td {
+  position: relative;
+  border: 2px solid white;
+  border-collapse: collapse;
+  margin-top: 1%;
+  
+}
+
+th.contactinfoth {
+    color: #34495E;
+    width: 120px;
+    height: auto;
+    text-align: right;
+    padding-right: 10px;
+}
+td {
+    background-color:whitesmoke;
+    text-align: left;
+    min-width: 200px;
+    padding-left: 20px;
+}
+
+
+.employee-edit-button {
+  position:relative;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  margin-top: -11px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #000;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+}
+
+.employee-edit-button:hover {
+  opacity: 0.7;
+}
+
+
+.card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 250px;
+  margin: 0;
+}
+
+
+ .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  height: auto;
+
+}
+
+
+/*--My Tasks--*/
+
+/* Style the list items */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked:before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.taskheader {
+  background-color: #3b7fb2;
+  padding: 30px 40px;
+  color: black;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.taskheader:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+
+
+
+
+
+/*--Education/Experience--*/
+.eduexpheader {
+  color: #3b7fb2;
+  font-size: 30px;
+  text-outline: 1px black;
+  font-weight: 600;
+  padding-top: 0.1%;
+  padding-left: 10px;
+}
+span.eduplus, i.eduplus {
+    float: right;
+    color: #3b7fb2;
+  text-outline: 1px black;
+  font-weight: 600;
+}
+
+.education {
+    margin-left: 20px;
+    line-height: 0.5;
+}
+.education-years {
+    color:gray;
+    padding-left: 50px;
+}
+.universityimg {
+    float:left;
+    padding: 0px 10px 30px;
+}
+.exp-title {
+    padding-left: 50px;
+}
+
+
+/* ---- Tab Section  ---- */
+.tab-background {
+  background-color: #EEEEEE;
+  text-align: center;
+}
+.tab-section a{
+  text-decoration:none;
+  text-align: center;
+  background-color: #0D47A1;
+  padding: 10px;
+  width: 22%;
+  min-width: 30px;
+  margin:1%;
+  display: inline-block;
+  border: 1px solid rgb(120,120,125);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav a:hover {
+  background-color: black;
+}
